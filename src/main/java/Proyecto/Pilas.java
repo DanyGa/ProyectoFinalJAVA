@@ -51,23 +51,28 @@ public class Pilas extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel3.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Elephant", 1, 18)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(153, 204, 255));
         jLabel3.setText("PILA");
 
-        jLabel1.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Century Schoolbook", 0, 12)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(153, 204, 255));
         jLabel1.setText("Dato");
 
-        btnRegresar.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
-        btnRegresar.setText("VOLVER");
+        btnRegresar.setBackground(new java.awt.Color(153, 204, 255));
+        btnRegresar.setFont(new java.awt.Font("Modern No. 20", 0, 12)); // NOI18N
+        btnRegresar.setText("Atras");
         btnRegresar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnRegresarActionPerformed(evt);
             }
         });
 
-        txtDato.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        txtDato.setFont(new java.awt.Font("Century Schoolbook", 0, 12)); // NOI18N
+        txtDato.setForeground(new java.awt.Color(153, 204, 255));
 
-        btnPush.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        btnPush.setBackground(new java.awt.Color(153, 204, 255));
+        btnPush.setFont(new java.awt.Font("Modern No. 20", 0, 12)); // NOI18N
         btnPush.setText("Push");
         btnPush.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -75,7 +80,8 @@ public class Pilas extends javax.swing.JFrame {
             }
         });
 
-        btnPop.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        btnPop.setBackground(new java.awt.Color(153, 204, 255));
+        btnPop.setFont(new java.awt.Font("Modern No. 20", 0, 12)); // NOI18N
         btnPop.setText("Pop");
         btnPop.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -83,7 +89,8 @@ public class Pilas extends javax.swing.JFrame {
             }
         });
 
-        btnCount.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        btnCount.setBackground(new java.awt.Color(153, 204, 255));
+        btnCount.setFont(new java.awt.Font("Modern No. 20", 0, 12)); // NOI18N
         btnCount.setText("Count");
         btnCount.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -91,7 +98,8 @@ public class Pilas extends javax.swing.JFrame {
             }
         });
 
-        btnGuardar.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        btnGuardar.setBackground(new java.awt.Color(153, 204, 255));
+        btnGuardar.setFont(new java.awt.Font("Modern No. 20", 0, 12)); // NOI18N
         btnGuardar.setText("Guardar");
         btnGuardar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -99,12 +107,15 @@ public class Pilas extends javax.swing.JFrame {
             }
         });
 
-        txtArchivo.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        txtArchivo.setFont(new java.awt.Font("Century Schoolbook", 0, 12)); // NOI18N
+        txtArchivo.setForeground(new java.awt.Color(153, 204, 255));
 
-        jLabel2.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Century Schoolbook", 0, 12)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(153, 204, 255));
         jLabel2.setText("Nombre del archivo");
 
-        btnCargar.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        btnCargar.setBackground(new java.awt.Color(153, 204, 255));
+        btnCargar.setFont(new java.awt.Font("Modern No. 20", 0, 12)); // NOI18N
         btnCargar.setText("Cargar");
         btnCargar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -112,7 +123,8 @@ public class Pilas extends javax.swing.JFrame {
             }
         });
 
-        btnEliminarCola.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        btnEliminarCola.setBackground(new java.awt.Color(153, 204, 255));
+        btnEliminarCola.setFont(new java.awt.Font("Modern No. 20", 0, 12)); // NOI18N
         btnEliminarCola.setText("Eliminar cola");
         btnEliminarCola.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -120,7 +132,8 @@ public class Pilas extends javax.swing.JFrame {
             }
         });
 
-        lblPila.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        lblPila.setFont(new java.awt.Font("Century Schoolbook", 0, 12)); // NOI18N
+        lblPila.setForeground(new java.awt.Color(153, 204, 255));
         lblPila.setText("Pila");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());

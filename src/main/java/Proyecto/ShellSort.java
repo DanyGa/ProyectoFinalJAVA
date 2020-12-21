@@ -111,18 +111,21 @@ public class ShellSort extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel4.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Century Schoolbook", 0, 12)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(153, 0, 51));
         jLabel4.setText("Max");
 
-        btnRegresar.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
-        btnRegresar.setText("VOLVER");
+        btnRegresar.setBackground(new java.awt.Color(153, 0, 51));
+        btnRegresar.setFont(new java.awt.Font("Modern No. 20", 0, 12)); // NOI18N
+        btnRegresar.setText("Atras");
         btnRegresar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnRegresarActionPerformed(evt);
             }
         });
 
-        btnArreglo.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        btnArreglo.setBackground(new java.awt.Color(153, 0, 51));
+        btnArreglo.setFont(new java.awt.Font("Modern No. 20", 0, 12)); // NOI18N
         btnArreglo.setText("Crear arreglo");
         btnArreglo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -133,9 +136,11 @@ public class ShellSort extends javax.swing.JFrame {
         lblIteraciones.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
         lblIteraciones.setText("-");
 
-        txtMinimo.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        txtMinimo.setFont(new java.awt.Font("Century Schoolbook", 0, 12)); // NOI18N
+        txtMinimo.setForeground(new java.awt.Color(153, 0, 51));
 
-        jLabel6.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Century Schoolbook", 0, 12)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(153, 0, 51));
         jLabel6.setText("Arreglo desordenado");
 
         lblArregloDesordenado.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
@@ -144,12 +149,15 @@ public class ShellSort extends javax.swing.JFrame {
         lblTiempo.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
         lblTiempo.setText("-");
 
-        txtMaximo.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        txtMaximo.setFont(new java.awt.Font("Century Schoolbook", 0, 12)); // NOI18N
+        txtMaximo.setForeground(new java.awt.Color(153, 0, 51));
 
-        jLabel2.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Century Schoolbook", 0, 12)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(153, 0, 51));
         jLabel2.setText("Tamaño del arreglo");
 
-        btnArreglo2.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        btnArreglo2.setBackground(new java.awt.Color(153, 0, 51));
+        btnArreglo2.setFont(new java.awt.Font("Modern No. 20", 0, 12)); // NOI18N
         btnArreglo2.setText("Crear arreglo aleatorio");
         btnArreglo2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -157,25 +165,31 @@ public class ShellSort extends javax.swing.JFrame {
             }
         });
 
-        jLabel3.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Century Schoolbook", 0, 12)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(153, 0, 51));
         jLabel3.setText("Min");
 
-        jLabel10.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        jLabel10.setFont(new java.awt.Font("Century Schoolbook", 0, 12)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(153, 0, 51));
         jLabel10.setText("Iteraciones");
 
-        txtTamaño.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        txtTamaño.setFont(new java.awt.Font("Century Schoolbook", 0, 12)); // NOI18N
+        txtTamaño.setForeground(new java.awt.Color(153, 0, 51));
 
         lblArregloOrdenado.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
         lblArregloOrdenado.setText("-");
 
-        jLabel11.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        jLabel11.setFont(new java.awt.Font("Century Schoolbook", 0, 12)); // NOI18N
+        jLabel11.setForeground(new java.awt.Color(153, 0, 51));
         jLabel11.setText("Tiempo elapsado");
 
-        jLabel1.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
-        jLabel1.setText("SHELL");
+        jLabel1.setFont(new java.awt.Font("Elephant", 1, 18)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(153, 0, 51));
+        jLabel1.setText("Shell Sort");
         jLabel1.setToolTipText("");
 
-        jLabel8.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        jLabel8.setFont(new java.awt.Font("Century Schoolbook", 0, 12)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(153, 0, 51));
         jLabel8.setText("Arreglo ordenado");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -183,8 +197,23 @@ public class ShellSort extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap(17, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel6)
+                            .addComponent(jLabel8)
+                            .addComponent(jLabel10)
+                            .addComponent(jLabel11))
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lblArregloDesordenado)
+                            .addComponent(lblArregloOrdenado)
+                            .addComponent(lblIteraciones)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(lblTiempo)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(btnRegresar))))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
@@ -206,32 +235,17 @@ public class ShellSort extends javax.swing.JFrame {
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(txtMaximo, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(btnArreglo))))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel6)
-                            .addComponent(jLabel8)
-                            .addComponent(jLabel10)
-                            .addComponent(jLabel11))
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lblArregloDesordenado)
-                            .addComponent(lblArregloOrdenado)
-                            .addComponent(lblIteraciones)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(lblTiempo)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(btnRegresar)))))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                .addComponent(btnArreglo)))))
+                .addContainerGap(18, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
-                .addGap(175, 175, 175)
+                .addGap(153, 153, 153)
                 .addComponent(jLabel1)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(50, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel1)
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

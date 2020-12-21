@@ -115,44 +115,58 @@ public class RadixSort extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel4.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
-        jLabel4.setText("RADIX");
+        jLabel4.setFont(new java.awt.Font("Elephant", 1, 18)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(173, 114, 12));
+        jLabel4.setText("Radix Sort");
         jLabel4.setToolTipText("");
 
-        jLabel10.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        jLabel10.setFont(new java.awt.Font("Century Schoolbook", 0, 12)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(173, 114, 12));
         jLabel10.setText("Tiempo");
 
-        jLabel2.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Century Schoolbook", 0, 12)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(173, 114, 12));
         jLabel2.setText("Minimo");
 
-        jLabel5.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Century Schoolbook", 0, 12)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(173, 114, 12));
         jLabel5.setText("Arreglo orignal");
 
-        txtMinimo.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        txtMinimo.setFont(new java.awt.Font("Century Schoolbook", 0, 12)); // NOI18N
+        txtMinimo.setForeground(new java.awt.Color(173, 114, 12));
 
-        jLabel8.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        jLabel8.setFont(new java.awt.Font("Century Schoolbook", 0, 12)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(173, 114, 12));
         jLabel8.setText("Intercambios");
 
-        lblTiempo.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        lblTiempo.setFont(new java.awt.Font("Century Schoolbook", 0, 12)); // NOI18N
+        lblTiempo.setForeground(new java.awt.Color(173, 114, 12));
         lblTiempo.setText("Tiempo");
 
-        txtTamaño.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        txtTamaño.setFont(new java.awt.Font("Century Schoolbook", 0, 12)); // NOI18N
+        txtTamaño.setForeground(new java.awt.Color(173, 114, 12));
 
-        lblArregloOriginal.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        lblArregloOriginal.setFont(new java.awt.Font("Century Schoolbook", 0, 12)); // NOI18N
+        lblArregloOriginal.setForeground(new java.awt.Color(173, 114, 12));
         lblArregloOriginal.setText("Arreglo orignal");
 
-        jLabel6.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Century Schoolbook", 0, 12)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(173, 114, 12));
         jLabel6.setText("Arreglo ordenado");
 
-        jLabel3.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Century Schoolbook", 0, 12)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(173, 114, 12));
         jLabel3.setText("Maximo");
 
-        lblComparaciones.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        lblComparaciones.setFont(new java.awt.Font("Century Schoolbook", 0, 12)); // NOI18N
+        lblComparaciones.setForeground(new java.awt.Color(173, 114, 12));
         lblComparaciones.setText("Comparaciones");
 
-        txtMaximo.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        txtMaximo.setFont(new java.awt.Font("Century Schoolbook", 0, 12)); // NOI18N
+        txtMaximo.setForeground(new java.awt.Color(173, 114, 12));
 
-        btnArregloAleatorio.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        btnArregloAleatorio.setBackground(new java.awt.Color(173, 114, 12));
+        btnArregloAleatorio.setFont(new java.awt.Font("Modern No. 20", 0, 12)); // NOI18N
         btnArregloAleatorio.setText("Crear arreglo aleatorio");
         btnArregloAleatorio.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -160,24 +174,29 @@ public class RadixSort extends javax.swing.JFrame {
             }
         });
 
-        btnRegreso.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
-        btnRegreso.setText("VOLVER");
+        btnRegreso.setBackground(new java.awt.Color(173, 114, 12));
+        btnRegreso.setFont(new java.awt.Font("Modern No. 20", 0, 12)); // NOI18N
+        btnRegreso.setText("Atras");
         btnRegreso.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnRegresoActionPerformed(evt);
             }
         });
 
-        jLabel1.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Century Schoolbook", 0, 12)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(173, 114, 12));
         jLabel1.setText("Tamaño");
 
-        lblArregloOrdenado.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        lblArregloOrdenado.setFont(new java.awt.Font("Century Schoolbook", 0, 12)); // NOI18N
+        lblArregloOrdenado.setForeground(new java.awt.Color(173, 114, 12));
         lblArregloOrdenado.setText("Arreglo ordenado");
 
-        jLabel7.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("Century Schoolbook", 0, 12)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(173, 114, 12));
         jLabel7.setText("Comparaciones");
 
-        btnArreglo.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        btnArreglo.setBackground(new java.awt.Color(173, 114, 12));
+        btnArreglo.setFont(new java.awt.Font("Modern No. 20", 0, 12)); // NOI18N
         btnArreglo.setText("Crear arreglo");
         btnArreglo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -185,7 +204,8 @@ public class RadixSort extends javax.swing.JFrame {
             }
         });
 
-        lblIntercambios.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        lblIntercambios.setFont(new java.awt.Font("Century Schoolbook", 0, 12)); // NOI18N
+        lblIntercambios.setForeground(new java.awt.Color(173, 114, 12));
         lblIntercambios.setText("Intercambios");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -226,23 +246,23 @@ public class RadixSort extends javax.swing.JFrame {
                             .addComponent(lblComparaciones)
                             .addComponent(lblIntercambios)
                             .addComponent(lblTiempo))
-                        .addGap(0, 100, Short.MAX_VALUE))
+                        .addGap(0, 115, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(btnArregloAleatorio)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(btnRegreso)))
                 .addContainerGap())
-            .addGroup(layout.createSequentialGroup()
-                .addGap(293, 293, 293)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel4)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(192, 192, 192))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(15, 15, 15)
+                .addGap(24, 24, 24)
                 .addComponent(jLabel4)
-                .addGap(27, 27, 27)
+                .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1)
                     .addComponent(txtTamaño, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -276,7 +296,7 @@ public class RadixSort extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(btnArregloAleatorio)
                             .addComponent(btnRegreso))))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(13, Short.MAX_VALUE))
         );
 
         pack();
