@@ -27,21 +27,138 @@ public class Listas extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        btnSimple = new javax.swing.JButton();
+        btnSCircular = new javax.swing.JButton();
+        btnDoble = new javax.swing.JButton();
+        btnDCircular = new javax.swing.JButton();
+        lblTitulo = new javax.swing.JLabel();
+        lblIns = new javax.swing.JLabel();
+        btnRegresar = new javax.swing.JButton();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        btnSimple.setBackground(new java.awt.Color(255, 0, 0));
+        btnSimple.setText("Lista Simple");
+        btnSimple.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSimpleActionPerformed(evt);
+            }
+        });
+
+        btnSCircular.setBackground(new java.awt.Color(255, 0, 0));
+        btnSCircular.setText("Lista Simple Circular");
+        btnSCircular.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSCircularActionPerformed(evt);
+            }
+        });
+
+        btnDoble.setBackground(new java.awt.Color(255, 0, 0));
+        btnDoble.setText("Lista Doble");
+        btnDoble.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnDobleActionPerformed(evt);
+            }
+        });
+
+        btnDCircular.setBackground(new java.awt.Color(255, 0, 0));
+        btnDCircular.setText("Lista Doble Circular");
+        btnDCircular.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnDCircularActionPerformed(evt);
+            }
+        });
+
+        lblTitulo.setFont(new java.awt.Font("Elephant", 1, 26)); // NOI18N
+        lblTitulo.setForeground(new java.awt.Color(255, 0, 0));
+        lblTitulo.setText("Listas");
+
+        lblIns.setFont(new java.awt.Font("Modern No. 20", 1, 18)); // NOI18N
+        lblIns.setForeground(new java.awt.Color(255, 0, 0));
+        lblIns.setText("Selecciona un tipo de Lista");
+
+        btnRegresar.setBackground(new java.awt.Color(255, 0, 0));
+        btnRegresar.setFont(new java.awt.Font("Modern No. 20", 0, 12)); // NOI18N
+        btnRegresar.setText("Atras");
+        btnRegresar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRegresarActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 629, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(100, 100, 100)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(btnSimple, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(btnDoble, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(48, 48, 48)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(btnDCircular, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(btnSCircular, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 131, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addGap(431, 431, 431)
+                                .addComponent(btnRegresar))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(179, 179, 179)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lblIns, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(55, 55, 55)
+                                .addComponent(lblTitulo, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                .addContainerGap(66, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 426, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(34, 34, 34)
+                .addComponent(lblTitulo)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(lblIns)
+                .addGap(38, 38, 38)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnSCircular, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnSimple, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(34, 34, 34)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnDoble, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnDCircular, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addComponent(btnRegresar)
+                .addContainerGap(53, Short.MAX_VALUE))
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnSimpleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSimpleActionPerformed
+        new ListaSimple().setVisible(true);
+    }//GEN-LAST:event_btnSimpleActionPerformed
+
+    private void btnSCircularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSCircularActionPerformed
+        new ListaSimpleCircular().setVisible(true);
+    }//GEN-LAST:event_btnSCircularActionPerformed
+
+    private void btnDobleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDobleActionPerformed
+        new ListaDoble().setVisible(true);
+    }//GEN-LAST:event_btnDobleActionPerformed
+
+    private void btnDCircularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDCircularActionPerformed
+        new ListaDobleCircular().setVisible(true);
+    }//GEN-LAST:event_btnDCircularActionPerformed
+
+    private void btnRegresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegresarActionPerformed
+         dispose();
+    }//GEN-LAST:event_btnRegresarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -79,5 +196,12 @@ public class Listas extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnDCircular;
+    private javax.swing.JButton btnDoble;
+    private javax.swing.JButton btnRegresar;
+    private javax.swing.JButton btnSCircular;
+    private javax.swing.JButton btnSimple;
+    private javax.swing.JLabel lblIns;
+    private javax.swing.JLabel lblTitulo;
     // End of variables declaration//GEN-END:variables
 }

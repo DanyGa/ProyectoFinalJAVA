@@ -27,21 +27,23 @@ public class MenuEstructuras extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        lblTitulo = new javax.swing.JLabel();
         lblIns = new javax.swing.JLabel();
         btnGrafo = new javax.swing.JButton();
         btnPIla = new javax.swing.JButton();
         btnCola = new javax.swing.JButton();
         btnArbol = new javax.swing.JButton();
-        btnMenu = new javax.swing.JButton();
         btnListas = new javax.swing.JButton();
+        lblTitulo = new javax.swing.JLabel();
+        btnRegresar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        lblTitulo.setText("Sde");
+        lblIns.setFont(new java.awt.Font("Modern No. 20", 1, 18)); // NOI18N
+        lblIns.setForeground(new java.awt.Color(102, 102, 0));
+        lblIns.setText("Selecciona un tipo de Estructura");
 
-        lblIns.setText("Estructuras de Datos");
-
+        btnGrafo.setBackground(new java.awt.Color(102, 102, 0));
+        btnGrafo.setFont(new java.awt.Font("Modern No. 20", 1, 12)); // NOI18N
         btnGrafo.setText("Grafo");
         btnGrafo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -49,6 +51,8 @@ public class MenuEstructuras extends javax.swing.JFrame {
             }
         });
 
+        btnPIla.setBackground(new java.awt.Color(102, 102, 0));
+        btnPIla.setFont(new java.awt.Font("Modern No. 20", 1, 12)); // NOI18N
         btnPIla.setText("Pila");
         btnPIla.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -56,6 +60,8 @@ public class MenuEstructuras extends javax.swing.JFrame {
             }
         });
 
+        btnCola.setBackground(new java.awt.Color(102, 102, 0));
+        btnCola.setFont(new java.awt.Font("Modern No. 20", 1, 12)); // NOI18N
         btnCola.setText("Cola");
         btnCola.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -63,6 +69,8 @@ public class MenuEstructuras extends javax.swing.JFrame {
             }
         });
 
+        btnArbol.setBackground(new java.awt.Color(102, 102, 0));
+        btnArbol.setFont(new java.awt.Font("Modern No. 20", 1, 12)); // NOI18N
         btnArbol.setText("Arbol");
         btnArbol.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -70,17 +78,25 @@ public class MenuEstructuras extends javax.swing.JFrame {
             }
         });
 
-        btnMenu.setText("Menu");
-        btnMenu.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnMenuActionPerformed(evt);
-            }
-        });
-
-        btnListas.setText("Lislas");
+        btnListas.setBackground(new java.awt.Color(102, 102, 0));
+        btnListas.setFont(new java.awt.Font("Modern No. 20", 1, 12)); // NOI18N
+        btnListas.setText("Listas");
         btnListas.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnListasActionPerformed(evt);
+            }
+        });
+
+        lblTitulo.setFont(new java.awt.Font("Elephant", 1, 26)); // NOI18N
+        lblTitulo.setForeground(new java.awt.Color(102, 102, 0));
+        lblTitulo.setText("Estructuras de Datos");
+
+        btnRegresar.setBackground(new java.awt.Color(102, 102, 0));
+        btnRegresar.setFont(new java.awt.Font("Modern No. 20", 0, 12)); // NOI18N
+        btnRegresar.setText("Atras");
+        btnRegresar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRegresarActionPerformed(evt);
             }
         });
 
@@ -91,53 +107,52 @@ public class MenuEstructuras extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(222, 222, 222)
-                        .addComponent(lblIns))
+                        .addGap(177, 177, 177)
+                        .addComponent(btnGrafo, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(60, 60, 60)
+                        .addComponent(btnArbol, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(169, 169, 169)
-                        .addComponent(btnGrafo)
-                        .addGap(88, 88, 88)
-                        .addComponent(btnArbol))
+                        .addGap(69, 69, 69)
+                        .addComponent(btnListas, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(40, 40, 40)
+                        .addComponent(btnPIla, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(44, 44, 44)
+                        .addComponent(btnCola, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(64, 64, 64)
-                        .addComponent(btnListas, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(111, 111, 111)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(btnPIla)
-                            .addComponent(lblTitulo))))
-                .addContainerGap(202, Short.MAX_VALUE))
+                        .addGap(214, 214, 214)
+                        .addComponent(lblTitulo))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(242, 242, 242)
+                        .addComponent(lblIns)))
+                .addContainerGap(92, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(btnMenu)
-                        .addGap(38, 38, 38))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(btnCola)
-                        .addGap(107, 107, 107))))
+                .addComponent(btnRegresar)
+                .addGap(28, 28, 28))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(33, 33, 33)
-                .addComponent(lblIns)
-                .addGap(18, 18, 18)
+                .addGap(25, 25, 25)
                 .addComponent(lblTitulo)
-                .addGap(52, 52, 52)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(lblIns)
+                .addGap(32, 32, 32)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnCola)
-                    .addComponent(btnPIla)
-                    .addComponent(btnListas))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 71, Short.MAX_VALUE)
+                    .addComponent(btnListas, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnPIla, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnCola, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(41, 41, 41)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnGrafo)
-                    .addComponent(btnArbol))
-                .addGap(48, 48, 48)
-                .addComponent(btnMenu)
-                .addGap(22, 22, 22))
+                    .addComponent(btnGrafo, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnArbol, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnRegresar)
+                .addContainerGap(24, Short.MAX_VALUE))
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnPIlaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPIlaActionPerformed
@@ -147,10 +162,6 @@ public class MenuEstructuras extends javax.swing.JFrame {
     private void btnColaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnColaActionPerformed
         new Colas().setVisible(true);
     }//GEN-LAST:event_btnColaActionPerformed
-
-    private void btnMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMenuActionPerformed
-        dispose();
-    }//GEN-LAST:event_btnMenuActionPerformed
 
     private void btnListasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnListasActionPerformed
         new Listas().setVisible(true);
@@ -163,6 +174,10 @@ public class MenuEstructuras extends javax.swing.JFrame {
     private void btnArbolActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnArbolActionPerformed
         new Arboles().setVisible(true);
     }//GEN-LAST:event_btnArbolActionPerformed
+
+    private void btnRegresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegresarActionPerformed
+         dispose();
+    }//GEN-LAST:event_btnRegresarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -204,8 +219,8 @@ public class MenuEstructuras extends javax.swing.JFrame {
     private javax.swing.JButton btnCola;
     private javax.swing.JButton btnGrafo;
     private javax.swing.JButton btnListas;
-    private javax.swing.JButton btnMenu;
     private javax.swing.JButton btnPIla;
+    private javax.swing.JButton btnRegresar;
     private javax.swing.JLabel lblIns;
     private javax.swing.JLabel lblTitulo;
     // End of variables declaration//GEN-END:variables

@@ -29,12 +29,16 @@ public class MenuPrincipal extends javax.swing.JFrame {
 
         btnEstructuras = new javax.swing.JButton();
         btnAlgoritmos = new javax.swing.JButton();
+        lblPri = new javax.swing.JLabel();
         lblBi = new javax.swing.JLabel();
+        lblPd = new javax.swing.JLabel();
         lblIns = new javax.swing.JLabel();
-        PD = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        btnEstructuras.setBackground(java.awt.Color.pink);
+        btnEstructuras.setFont(new java.awt.Font("Modern No. 20", 1, 12)); // NOI18N
+        btnEstructuras.setForeground(new java.awt.Color(60, 63, 65));
         btnEstructuras.setText("Estructuras");
         btnEstructuras.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -42,6 +46,9 @@ public class MenuPrincipal extends javax.swing.JFrame {
             }
         });
 
+        btnAlgoritmos.setBackground(java.awt.Color.pink);
+        btnAlgoritmos.setFont(new java.awt.Font("Modern No. 20", 1, 12)); // NOI18N
+        btnAlgoritmos.setForeground(new java.awt.Color(60, 63, 65));
         btnAlgoritmos.setText("Algoritmos");
         btnAlgoritmos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -49,11 +56,22 @@ public class MenuPrincipal extends javax.swing.JFrame {
             }
         });
 
-        lblBi.setText("Al primitivo programa de JAVA:D");
+        lblPri.setFont(new java.awt.Font("Elephant", 1, 20)); // NOI18N
+        lblPri.setForeground(java.awt.Color.pink);
+        lblPri.setText("Al primitivo programa de JAVA:D");
 
-        lblIns.setText("Bienvenid@");
+        lblBi.setFont(new java.awt.Font("Elephant", 1, 22)); // NOI18N
+        lblBi.setForeground(java.awt.Color.pink);
+        lblBi.setText("Bienvenid@");
 
-        PD.setText("Pd.No le supe poner imager de fondo");
+        lblPd.setFont(new java.awt.Font("Britannic Bold", 1, 14)); // NOI18N
+        lblPd.setForeground(java.awt.Color.pink);
+        lblPd.setText("Pd.No le supe poner imager de fondo");
+
+        lblIns.setFont(new java.awt.Font("Elephant", 1, 20)); // NOI18N
+        lblIns.setForeground(java.awt.Color.pink);
+        lblIns.setText("Que desea crear?");
+        lblIns.setToolTipText("");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -61,40 +79,48 @@ public class MenuPrincipal extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(lblPd))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(62, 62, 62)
-                        .addComponent(btnEstructuras)
-                        .addGap(65, 65, 65)
-                        .addComponent(btnAlgoritmos))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(156, 156, 156)
-                        .addComponent(lblIns))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(106, 106, 106)
-                        .addComponent(lblBi)))
-                .addContainerGap(87, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(PD)
-                .addGap(19, 19, 19))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(112, 112, 112)
+                                .addComponent(btnEstructuras, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(52, 52, 52)
+                                .addComponent(btnAlgoritmos, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(223, 223, 223)
+                                .addComponent(lblIns))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(138, 138, 138)
+                                .addComponent(lblPri))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(239, 239, 239)
+                                .addComponent(lblBi)))
+                        .addGap(0, 122, Short.MAX_VALUE)))
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(41, 41, 41)
-                .addComponent(lblIns)
-                .addGap(18, 18, 18)
+                .addGap(33, 33, 33)
                 .addComponent(lblBi)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 93, Short.MAX_VALUE)
+                .addGap(18, 18, 18)
+                .addComponent(lblPri)
+                .addGap(18, 18, 18)
+                .addComponent(lblIns)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 14, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnEstructuras)
-                    .addComponent(btnAlgoritmos))
-                .addGap(42, 42, 42)
-                .addComponent(PD)
-                .addGap(26, 26, 26))
+                    .addComponent(btnEstructuras, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnAlgoritmos, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(44, 44, 44)
+                .addComponent(lblPd)
+                .addGap(24, 24, 24))
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnEstructurasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEstructurasActionPerformed
@@ -142,10 +168,11 @@ public class MenuPrincipal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel PD;
     private javax.swing.JButton btnAlgoritmos;
     private javax.swing.JButton btnEstructuras;
     private javax.swing.JLabel lblBi;
     private javax.swing.JLabel lblIns;
+    private javax.swing.JLabel lblPd;
+    private javax.swing.JLabel lblPri;
     // End of variables declaration//GEN-END:variables
 }
