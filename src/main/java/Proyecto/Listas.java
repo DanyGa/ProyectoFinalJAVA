@@ -38,6 +38,7 @@ public class Listas extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         btnSimple.setBackground(new java.awt.Color(255, 0, 0));
+        btnSimple.setFont(new java.awt.Font("Modern No. 20", 1, 12)); // NOI18N
         btnSimple.setText("Lista Simple");
         btnSimple.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -46,6 +47,7 @@ public class Listas extends javax.swing.JFrame {
         });
 
         btnSCircular.setBackground(new java.awt.Color(255, 0, 0));
+        btnSCircular.setFont(new java.awt.Font("Modern No. 20", 1, 12)); // NOI18N
         btnSCircular.setText("Lista Simple Circular");
         btnSCircular.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -54,6 +56,7 @@ public class Listas extends javax.swing.JFrame {
         });
 
         btnDoble.setBackground(new java.awt.Color(255, 0, 0));
+        btnDoble.setFont(new java.awt.Font("Modern No. 20", 1, 12)); // NOI18N
         btnDoble.setText("Lista Doble");
         btnDoble.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -62,6 +65,7 @@ public class Listas extends javax.swing.JFrame {
         });
 
         btnDCircular.setBackground(new java.awt.Color(255, 0, 0));
+        btnDCircular.setFont(new java.awt.Font("Modern No. 20", 1, 12)); // NOI18N
         btnDCircular.setText("Lista Doble Circular");
         btnDCircular.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

@@ -55,7 +55,8 @@ public class ListaDoble extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        btnBuscar.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        btnBuscar.setBackground(new java.awt.Color(255, 153, 153));
+        btnBuscar.setFont(new java.awt.Font("Modern No. 20", 0, 12)); // NOI18N
         btnBuscar.setText("Buscar");
         btnBuscar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -63,7 +64,8 @@ public class ListaDoble extends javax.swing.JFrame {
             }
         });
 
-        btnBorrar.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        btnBorrar.setBackground(new java.awt.Color(255, 153, 153));
+        btnBorrar.setFont(new java.awt.Font("Modern No. 20", 0, 12)); // NOI18N
         btnBorrar.setText("Borrar");
         btnBorrar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -74,7 +76,8 @@ public class ListaDoble extends javax.swing.JFrame {
         lblLista.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
         lblLista.setText("-");
 
-        btnContar.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        btnContar.setBackground(new java.awt.Color(255, 153, 153));
+        btnContar.setFont(new java.awt.Font("Modern No. 20", 0, 12)); // NOI18N
         btnContar.setText("Contar");
         btnContar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -82,7 +85,8 @@ public class ListaDoble extends javax.swing.JFrame {
             }
         });
 
-        btnAgregar.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        btnAgregar.setBackground(new java.awt.Color(255, 153, 153));
+        btnAgregar.setFont(new java.awt.Font("Modern No. 20", 0, 12)); // NOI18N
         btnAgregar.setText("Agregar");
         btnAgregar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -90,7 +94,8 @@ public class ListaDoble extends javax.swing.JFrame {
             }
         });
 
-        btnGuardar.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        btnGuardar.setBackground(new java.awt.Color(255, 153, 153));
+        btnGuardar.setFont(new java.awt.Font("Modern No. 20", 0, 12)); // NOI18N
         btnGuardar.setText("Guardar");
         btnGuardar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -98,15 +103,19 @@ public class ListaDoble extends javax.swing.JFrame {
             }
         });
 
-        jLabel3.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Century Schoolbook", 0, 12)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 153, 153));
         jLabel3.setText("Dato a borrar");
 
-        txtArchivo.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        txtArchivo.setFont(new java.awt.Font("Century Schoolbook", 0, 12)); // NOI18N
+        txtArchivo.setForeground(new java.awt.Color(255, 153, 153));
 
-        jLabel4.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Century Schoolbook", 0, 12)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 153, 153));
         jLabel4.setText("Dato a buscar");
 
-        btnCargar.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        btnCargar.setBackground(new java.awt.Color(255, 153, 153));
+        btnCargar.setFont(new java.awt.Font("Modern No. 20", 0, 12)); // NOI18N
         btnCargar.setText("Cargar");
         btnCargar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -114,9 +123,11 @@ public class ListaDoble extends javax.swing.JFrame {
             }
         });
 
-        txtBorrar.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        txtBorrar.setFont(new java.awt.Font("Century Schoolbook", 0, 12)); // NOI18N
+        txtBorrar.setForeground(new java.awt.Color(255, 153, 153));
 
-        btnEliminar.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        btnEliminar.setBackground(new java.awt.Color(255, 153, 153));
+        btnEliminar.setFont(new java.awt.Font("Modern No. 20", 0, 12)); // NOI18N
         btnEliminar.setText("Eliminar lista");
         btnEliminar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -124,13 +135,16 @@ public class ListaDoble extends javax.swing.JFrame {
             }
         });
 
-        txtBuscar.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        txtBuscar.setFont(new java.awt.Font("Century Schoolbook", 0, 12)); // NOI18N
+        txtBuscar.setForeground(new java.awt.Color(255, 153, 153));
 
-        jLabel5.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Century Schoolbook", 0, 12)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 153, 153));
         jLabel5.setText("Nombre del archivo");
 
-        btnRegresar.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
-        btnRegresar.setText("VOLVER");
+        btnRegresar.setBackground(new java.awt.Color(255, 153, 153));
+        btnRegresar.setFont(new java.awt.Font("Modern No. 20", 0, 12)); // NOI18N
+        btnRegresar.setText("Atras");
         btnRegresar.setToolTipText("");
         btnRegresar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -138,13 +152,16 @@ public class ListaDoble extends javax.swing.JFrame {
             }
         });
 
-        jLabel1.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Century Schoolbook", 0, 12)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 153, 153));
         jLabel1.setText("Dato");
 
-        txtDato.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        txtDato.setFont(new java.awt.Font("Century Schoolbook", 0, 12)); // NOI18N
+        txtDato.setForeground(new java.awt.Color(255, 153, 153));
 
-        jLabel2.setFont(new java.awt.Font("Century Gothic", 0, 18)); // NOI18N
-        jLabel2.setText("LISTA DOBLE");
+        jLabel2.setFont(new java.awt.Font("Elephant", 0, 18)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 153, 153));
+        jLabel2.setText("Lista Doble");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -201,7 +218,7 @@ public class ListaDoble extends javax.swing.JFrame {
                         .addComponent(btnRegresar)))
                 .addContainerGap())
             .addGroup(layout.createSequentialGroup()
-                .addGap(80, 80, 80)
+                .addGap(74, 74, 74)
                 .addComponent(jLabel2)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -248,6 +265,7 @@ public class ListaDoble extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnBuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBuscarActionPerformed

@@ -35,79 +35,43 @@ public class ListaSimple extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        txtArchivo = new javax.swing.JTextField();
-        lblLista = new javax.swing.JLabel();
-        btnCargar = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
         btnAgregar = new javax.swing.JButton();
+        btnContar = new javax.swing.JButton();
         btnEliminar = new javax.swing.JButton();
+        txtDato = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
+        btnGuardar = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         btnRegresar = new javax.swing.JButton();
         txtBorrar = new javax.swing.JTextField();
         txtBuscar = new javax.swing.JTextField();
+        txtArchivo = new javax.swing.JTextField();
         btnBuscar = new javax.swing.JButton();
+        lblLista = new javax.swing.JLabel();
         btnBorrar = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
-        btnContar = new javax.swing.JButton();
-        txtDato = new javax.swing.JTextField();
-        btnGuardar = new javax.swing.JButton();
-        jLabel2 = new javax.swing.JLabel();
+        btnCargar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        lblLista.setText(".........");
+        jLabel1.setFont(new java.awt.Font("Century Schoolbook", 0, 12)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(0, 153, 255));
+        jLabel1.setText("Dato");
 
-        btnCargar.setText("Cargar");
-        btnCargar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnCargarActionPerformed(evt);
-            }
-        });
-
-        btnAgregar.setText("Introducir y mostrar");
+        btnAgregar.setBackground(new java.awt.Color(0, 153, 255));
+        btnAgregar.setFont(new java.awt.Font("Modern No. 20", 0, 12)); // NOI18N
+        btnAgregar.setText("Agregar");
+        btnAgregar.setToolTipText("");
         btnAgregar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAgregarActionPerformed(evt);
             }
         });
 
-        btnEliminar.setText("Eliminar lista");
-        btnEliminar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnEliminarActionPerformed(evt);
-            }
-        });
-
-        jLabel3.setText("Dato a borrar");
-
-        jLabel5.setText("Nombre del archivo");
-
-        jLabel4.setText("Dato a buscar");
-
-        btnRegresar.setText("Regresar");
-        btnRegresar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnRegresarActionPerformed(evt);
-            }
-        });
-
-        btnBuscar.setText("Buscar");
-        btnBuscar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnBuscarActionPerformed(evt);
-            }
-        });
-
-        btnBorrar.setText("Borrar");
-        btnBorrar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnBorrarActionPerformed(evt);
-            }
-        });
-
-        jLabel1.setText("Dato");
-
+        btnContar.setBackground(new java.awt.Color(0, 153, 255));
+        btnContar.setFont(new java.awt.Font("Modern No. 20", 0, 12)); // NOI18N
         btnContar.setText("Contar");
         btnContar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -115,6 +79,24 @@ public class ListaSimple extends javax.swing.JFrame {
             }
         });
 
+        btnEliminar.setBackground(new java.awt.Color(0, 153, 255));
+        btnEliminar.setFont(new java.awt.Font("Modern No. 20", 0, 12)); // NOI18N
+        btnEliminar.setText("Eliminar lista");
+        btnEliminar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEliminarActionPerformed(evt);
+            }
+        });
+
+        txtDato.setFont(new java.awt.Font("Century Schoolbook", 0, 12)); // NOI18N
+        txtDato.setForeground(new java.awt.Color(0, 153, 255));
+
+        jLabel3.setFont(new java.awt.Font("Century Schoolbook", 0, 12)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(0, 153, 255));
+        jLabel3.setText("Dato a borrar");
+
+        btnGuardar.setBackground(new java.awt.Color(0, 153, 255));
+        btnGuardar.setFont(new java.awt.Font("Modern No. 20", 0, 12)); // NOI18N
         btnGuardar.setText("Guardar");
         btnGuardar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -122,7 +104,65 @@ public class ListaSimple extends javax.swing.JFrame {
             }
         });
 
-        jLabel2.setText("Lista");
+        jLabel5.setFont(new java.awt.Font("Century Schoolbook", 0, 12)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(0, 153, 255));
+        jLabel5.setText("Nombre del archivo");
+
+        jLabel2.setFont(new java.awt.Font("Elephant", 0, 18)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(0, 153, 255));
+        jLabel2.setText("Lista Simple");
+
+        jLabel4.setFont(new java.awt.Font("Century Schoolbook", 0, 12)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(0, 153, 255));
+        jLabel4.setText("Dato a buscar");
+
+        btnRegresar.setBackground(new java.awt.Color(0, 153, 255));
+        btnRegresar.setFont(new java.awt.Font("Modern No. 20", 0, 12)); // NOI18N
+        btnRegresar.setText("Atras");
+        btnRegresar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRegresarActionPerformed(evt);
+            }
+        });
+
+        txtBorrar.setFont(new java.awt.Font("Century Schoolbook", 0, 12)); // NOI18N
+        txtBorrar.setForeground(new java.awt.Color(0, 153, 255));
+
+        txtBuscar.setFont(new java.awt.Font("Century Schoolbook", 0, 12)); // NOI18N
+        txtBuscar.setForeground(new java.awt.Color(0, 153, 255));
+
+        txtArchivo.setFont(new java.awt.Font("Century Schoolbook", 0, 12)); // NOI18N
+        txtArchivo.setForeground(new java.awt.Color(0, 153, 255));
+
+        btnBuscar.setBackground(new java.awt.Color(0, 153, 255));
+        btnBuscar.setFont(new java.awt.Font("Modern No. 20", 0, 12)); // NOI18N
+        btnBuscar.setText("Buscar");
+        btnBuscar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnBuscarActionPerformed(evt);
+            }
+        });
+
+        lblLista.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        lblLista.setText("-");
+
+        btnBorrar.setBackground(new java.awt.Color(0, 153, 255));
+        btnBorrar.setFont(new java.awt.Font("Modern No. 20", 0, 12)); // NOI18N
+        btnBorrar.setText("Borrar");
+        btnBorrar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnBorrarActionPerformed(evt);
+            }
+        });
+
+        btnCargar.setBackground(new java.awt.Color(0, 153, 255));
+        btnCargar.setFont(new java.awt.Font("Modern No. 20", 0, 12)); // NOI18N
+        btnCargar.setText("Cargar");
+        btnCargar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCargarActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -131,30 +171,26 @@ public class ListaSimple extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(btnAgregar)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel1)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(txtDato, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(lblLista)
-                                .addGap(0, 0, Short.MAX_VALUE))))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(btnEliminar, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(27, 27, 27)
+                        .addComponent(btnRegresar)
+                        .addGap(6, 6, 6))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addGap(6, 6, 6)
-                                .addComponent(jLabel3))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(btnGuardar)
-                                    .addComponent(jLabel4))
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                        .addComponent(btnGuardar)
+                                        .addComponent(jLabel4))
+                                    .addComponent(jLabel3))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(txtArchivo, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(btnCargar))
                                     .addGroup(layout.createSequentialGroup()
                                         .addGap(3, 3, 3)
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -164,35 +200,37 @@ public class ListaSimple extends javax.swing.JFrame {
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                             .addComponent(btnBuscar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                             .addComponent(btnBorrar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                            .addComponent(btnContar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                                            .addComponent(btnContar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jLabel1)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(lblLista)
                                     .addGroup(layout.createSequentialGroup()
-                                        .addComponent(txtArchivo, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(txtDato, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(btnCargar))
-                                    .addComponent(jLabel5))))
-                        .addGap(0, 141, Short.MAX_VALUE)))
-                .addContainerGap())
+                                        .addComponent(btnAgregar))))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addComponent(jLabel2)
+                                .addGap(46, 46, 46)))
+                        .addContainerGap(41, Short.MAX_VALUE))))
             .addGroup(layout.createSequentialGroup()
-                .addGap(74, 74, 74)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btnEliminar, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(24, 24, 24)
-                        .addComponent(btnRegresar)))
+                .addGap(81, 81, 81)
+                .addComponent(jLabel5)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(20, 20, 20)
                 .addComponent(jLabel2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblLista)
                     .addComponent(txtDato, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel1))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnAgregar)
+                    .addComponent(jLabel1)
+                    .addComponent(btnAgregar))
+                .addGap(18, 18, 18)
+                .addComponent(lblLista)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
@@ -214,45 +252,21 @@ public class ListaSimple extends javax.swing.JFrame {
                     .addComponent(btnGuardar)
                     .addComponent(txtArchivo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnCargar))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnEliminar, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnRegresar, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(btnRegresar)
+                        .addContainerGap())
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(btnEliminar)
+                        .addGap(29, 29, 29))))
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
-
-    private void btnCargarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCargarActionPerformed
-        final JFileChooser fc = new JFileChooser();
-        int response = fc.showOpenDialog(this);
-        if( response == fc.APPROVE_OPTION){
-            String path = fc.getSelectedFile().toString();
-            File file = new File(path);
-            Scanner scan;
-            try {
-                scan = new Scanner(file);
-                String contenido = scan.nextLine();
-                String[] listaArreglo;
-                listaArreglo = contenido.split(",");
-                int contador = 0;
-                miLista.setHead(null);
-                for(String string : listaArreglo){
-                    n = new Nodo();
-                    n.setDato(Integer.parseInt(listaArreglo[contador]));
-                    miLista.Agregar(n);
-                    contador++;
-                }
-                lblLista.setText(miLista.ToString());
-            } catch (FileNotFoundException ex) {
-                Logger.getLogger(ListaSimple.class.getName()).log(Level.SEVERE, null, ex);
-            }
-        }
-
-    }//GEN-LAST:event_btnCargarActionPerformed
 
     private void btnAgregarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAgregarActionPerformed
         try{
@@ -273,10 +287,33 @@ public class ListaSimple extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_btnAgregarActionPerformed
 
+    private void btnContarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnContarActionPerformed
+        JOptionPane.showMessageDialog(null, "Numero de elementos en la lista : " + miLista.ContarNodos());
+    }//GEN-LAST:event_btnContarActionPerformed
+
     private void btnEliminarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEliminarActionPerformed
         miLista.setHead(null);
         lblLista.setText(miLista.ToString());
     }//GEN-LAST:event_btnEliminarActionPerformed
+
+    private void btnGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarActionPerformed
+        try{
+            String textolista = lblLista.getText();
+            String nombreDelArchivo = "";
+            if(nombreDelArchivo.isEmpty()){
+                nombreDelArchivo = "ListaEnlazada";
+            }else{
+                nombreDelArchivo = txtArchivo.getText();
+            }
+            Writer.Escribir(textolista, nombreDelArchivo);
+            JOptionPane.showMessageDialog(null, "Datos guardados");
+            txtArchivo.setText("");
+
+        }catch(Exception e)
+        {
+            JOptionPane.showMessageDialog(null, "Error al guardar los datos");
+        }
+    }//GEN-LAST:event_btnGuardarActionPerformed
 
     private void btnRegresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegresarActionPerformed
         dispose();
@@ -307,32 +344,34 @@ public class ListaSimple extends javax.swing.JFrame {
         miLista.Borrar(dato);
         lblLista.setText(miLista.ToString());
         txtBorrar.setText("");
-
     }//GEN-LAST:event_btnBorrarActionPerformed
 
-    private void btnContarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnContarActionPerformed
-        JOptionPane.showMessageDialog(null, "Numero de elementos en la lista : " + miLista.ContarNodos());
-    }//GEN-LAST:event_btnContarActionPerformed
-
-    private void btnGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarActionPerformed
-        try{
-            String textolista = lblLista.getText();
-            String nombreDelArchivo = "";
-            if(nombreDelArchivo.isEmpty()){
-                nombreDelArchivo = "ListaEnlazada";
-            }else{
-                nombreDelArchivo = txtArchivo.getText();
+    private void btnCargarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCargarActionPerformed
+        final JFileChooser fc = new JFileChooser();
+        int response = fc.showOpenDialog(this);
+        if( response == fc.APPROVE_OPTION){
+            String path = fc.getSelectedFile().toString();
+            File file = new File(path);
+            Scanner scan;
+            try {
+                scan = new Scanner(file);
+                String contenido = scan.nextLine();
+                String[] listaArreglo;
+                listaArreglo = contenido.split(",");
+                int contador = 0;
+                miLista.setHead(null);
+                for(String string : listaArreglo){
+                    n = new Nodo();
+                    n.setDato(Integer.parseInt(listaArreglo[contador]));
+                    miLista.Agregar(n);
+                    contador++;
+                }
+                lblLista.setText(miLista.ToString());
+            } catch (FileNotFoundException ex) {
+                Logger.getLogger(ListaSimple.class.getName()).log(Level.SEVERE, null, ex);
             }
-            Writer.Escribir(textolista, nombreDelArchivo);
-            JOptionPane.showMessageDialog(null, "Datos guardados");
-            txtArchivo.setText("");
-
-        }catch(Exception e)
-        {
-            JOptionPane.showMessageDialog(null, "Error al guardar los datos");
         }
-
-    }//GEN-LAST:event_btnGuardarActionPerformed
+    }//GEN-LAST:event_btnCargarActionPerformed
 
     /**
      * @param args the command line arguments

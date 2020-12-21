@@ -91,6 +91,9 @@
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="0" green="0" red="ff" type="rgb"/>
         </Property>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Modern No. 20" size="12" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Lista Simple"/>
       </Properties>
       <Events>
@@ -101,6 +104,9 @@
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="0" green="0" red="ff" type="rgb"/>
+        </Property>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Modern No. 20" size="12" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Lista Simple Circular"/>
       </Properties>
@@ -113,6 +119,9 @@
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="0" green="0" red="ff" type="rgb"/>
         </Property>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Modern No. 20" size="12" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Lista Doble"/>
       </Properties>
       <Events>
@@ -123,6 +132,9 @@
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="0" green="0" red="ff" type="rgb"/>
+        </Property>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Modern No. 20" size="12" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Lista Doble Circular"/>
       </Properties>

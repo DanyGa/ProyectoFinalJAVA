@@ -55,7 +55,8 @@ public class ListaDobleCircular extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        btnContar.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        btnContar.setBackground(new java.awt.Color(102, 204, 0));
+        btnContar.setFont(new java.awt.Font("Century Schoolbook", 0, 12)); // NOI18N
         btnContar.setText("Contar");
         btnContar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -63,7 +64,8 @@ public class ListaDobleCircular extends javax.swing.JFrame {
             }
         });
 
-        btnEliminar.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        btnEliminar.setBackground(new java.awt.Color(102, 204, 0));
+        btnEliminar.setFont(new java.awt.Font("Century Schoolbook", 0, 12)); // NOI18N
         btnEliminar.setText("Eliminar lista");
         btnEliminar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -71,20 +73,26 @@ public class ListaDobleCircular extends javax.swing.JFrame {
             }
         });
 
-        jLabel3.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Britannic Bold", 0, 12)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(102, 204, 0));
         jLabel3.setText("Dato a borrar");
 
-        txtBuscar.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        txtBuscar.setFont(new java.awt.Font("Century Schoolbook", 0, 12)); // NOI18N
+        txtBuscar.setForeground(new java.awt.Color(102, 204, 0));
 
-        jLabel5.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Britannic Bold", 0, 12)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(102, 204, 0));
         jLabel5.setText("Nombre del archivo");
 
-        txtArchivo.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        txtArchivo.setFont(new java.awt.Font("Century Schoolbook", 0, 12)); // NOI18N
+        txtArchivo.setForeground(new java.awt.Color(102, 204, 0));
 
-        jLabel4.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Britannic Bold", 0, 12)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(102, 204, 0));
         jLabel4.setText("Dato a buscar");
 
-        btnBuscar.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        btnBuscar.setBackground(new java.awt.Color(102, 204, 0));
+        btnBuscar.setFont(new java.awt.Font("Century Schoolbook", 0, 12)); // NOI18N
         btnBuscar.setText("Buscar");
         btnBuscar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -92,21 +100,24 @@ public class ListaDobleCircular extends javax.swing.JFrame {
             }
         });
 
-        txtDato.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        txtDato.setFont(new java.awt.Font("Century Schoolbook", 0, 12)); // NOI18N
+        txtDato.setForeground(new java.awt.Color(102, 204, 0));
 
         lblLista.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
         lblLista.setText("-");
         lblLista.setToolTipText("");
 
-        btnRegresar.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
-        btnRegresar.setText("VOLVER");
+        btnRegresar.setBackground(new java.awt.Color(102, 204, 0));
+        btnRegresar.setFont(new java.awt.Font("Century Schoolbook", 0, 12)); // NOI18N
+        btnRegresar.setText("Atras");
         btnRegresar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnRegresarActionPerformed(evt);
             }
         });
 
-        btnBorrar.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        btnBorrar.setBackground(new java.awt.Color(102, 204, 0));
+        btnBorrar.setFont(new java.awt.Font("Century Schoolbook", 0, 12)); // NOI18N
         btnBorrar.setText("Borrar");
         btnBorrar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -114,7 +125,8 @@ public class ListaDobleCircular extends javax.swing.JFrame {
             }
         });
 
-        btnGuardar.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        btnGuardar.setBackground(new java.awt.Color(102, 204, 0));
+        btnGuardar.setFont(new java.awt.Font("Century Schoolbook", 0, 12)); // NOI18N
         btnGuardar.setText("Guardar");
         btnGuardar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -122,7 +134,8 @@ public class ListaDobleCircular extends javax.swing.JFrame {
             }
         });
 
-        btnCargar.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        btnCargar.setBackground(new java.awt.Color(102, 204, 0));
+        btnCargar.setFont(new java.awt.Font("Century Schoolbook", 0, 12)); // NOI18N
         btnCargar.setText("Cargar");
         btnCargar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -130,15 +143,19 @@ public class ListaDobleCircular extends javax.swing.JFrame {
             }
         });
 
-        txtBorrar.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        txtBorrar.setFont(new java.awt.Font("Century Schoolbook", 0, 12)); // NOI18N
+        txtBorrar.setForeground(new java.awt.Color(102, 204, 0));
 
-        jLabel1.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Britannic Bold", 0, 12)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(102, 204, 0));
         jLabel1.setText("Dato");
 
-        jLabel2.setFont(new java.awt.Font("Century Gothic", 0, 18)); // NOI18N
-        jLabel2.setText("LISTA DOBLE CIRCULAR");
+        jLabel2.setFont(new java.awt.Font("Elephant", 0, 18)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(102, 204, 0));
+        jLabel2.setText("Lista Doble Circular");
 
-        btnAgregar.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        btnAgregar.setBackground(new java.awt.Color(102, 204, 0));
+        btnAgregar.setFont(new java.awt.Font("Century Schoolbook", 0, 12)); // NOI18N
         btnAgregar.setText("Agregar");
         btnAgregar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -153,7 +170,6 @@ public class ListaDobleCircular extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(btnRegresar)
                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
                         .addGap(6, 6, 6)
                         .addComponent(btnGuardar)
@@ -189,9 +205,13 @@ public class ListaDobleCircular extends javax.swing.JFrame {
                             .addComponent(btnEliminar, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel5)))
                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                        .addGap(39, 39, 39)
+                        .addGap(35, 35, 35)
                         .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                .addContainerGap(80, Short.MAX_VALUE))
+                .addContainerGap(40, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(btnRegresar)
+                .addGap(26, 26, 26))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -236,6 +256,7 @@ public class ListaDobleCircular extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnContarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnContarActionPerformed
