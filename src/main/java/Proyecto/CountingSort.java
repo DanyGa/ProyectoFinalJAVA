@@ -129,7 +129,8 @@ public class CountingSort extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        btnArreglo2.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        btnArreglo2.setBackground(new java.awt.Color(102, 102, 0));
+        btnArreglo2.setFont(new java.awt.Font("Modern No. 20", 0, 12)); // NOI18N
         btnArreglo2.setText("Crear arreglo aleatorio");
         btnArreglo2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -137,33 +138,41 @@ public class CountingSort extends javax.swing.JFrame {
             }
         });
 
-        jLabel6.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Century Schoolbook", 0, 12)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(102, 102, 0));
         jLabel6.setText("Arreglo desordenado");
 
-        jLabel8.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        jLabel8.setFont(new java.awt.Font("Century Schoolbook", 0, 12)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(102, 102, 0));
         jLabel8.setText("Arreglo ordenado");
 
         lblArregloOrdenado.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
         lblArregloOrdenado.setText("-");
 
-        jLabel10.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        jLabel10.setFont(new java.awt.Font("Century Schoolbook", 0, 12)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(102, 102, 0));
         jLabel10.setText("Arreglo invertido");
 
-        txtMaximo.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        txtMaximo.setFont(new java.awt.Font("Century Schoolbook", 0, 12)); // NOI18N
+        txtMaximo.setForeground(new java.awt.Color(102, 102, 0));
 
-        jLabel2.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Century Schoolbook", 0, 12)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(102, 102, 0));
         jLabel2.setText("Tamaño del arreglo");
 
         lblArregloInvertido.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
         lblArregloInvertido.setText("-");
 
-        jLabel11.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        jLabel11.setFont(new java.awt.Font("Century Schoolbook", 0, 12)); // NOI18N
+        jLabel11.setForeground(new java.awt.Color(102, 102, 0));
         jLabel11.setText("Tiempo elapsado");
 
-        jLabel3.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Century Schoolbook", 0, 12)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(102, 102, 0));
         jLabel3.setText("Min");
 
-        txtTamaño.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        txtTamaño.setFont(new java.awt.Font("Century Schoolbook", 0, 12)); // NOI18N
+        txtTamaño.setForeground(new java.awt.Color(102, 102, 0));
 
         lblTiempo.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
         lblTiempo.setText("-");
@@ -171,23 +180,28 @@ public class CountingSort extends javax.swing.JFrame {
         lblArregloDesordenado.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
         lblArregloDesordenado.setText("-");
 
-        jLabel4.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Century Schoolbook", 0, 12)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(102, 102, 0));
         jLabel4.setText("Max");
 
-        txtMinimo.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        txtMinimo.setFont(new java.awt.Font("Century Schoolbook", 0, 12)); // NOI18N
+        txtMinimo.setForeground(new java.awt.Color(102, 102, 0));
 
-        btnRegresar.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
-        btnRegresar.setText("VOLVER");
+        btnRegresar.setBackground(new java.awt.Color(102, 102, 0));
+        btnRegresar.setFont(new java.awt.Font("Modern No. 20", 0, 12)); // NOI18N
+        btnRegresar.setText("Atras");
         btnRegresar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnRegresarActionPerformed(evt);
             }
         });
 
-        jLabel1.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
-        jLabel1.setText("COUNT");
+        jLabel1.setFont(new java.awt.Font("Elephant", 1, 18)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(102, 102, 0));
+        jLabel1.setText("Counting Sort");
 
-        btnArreglo.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        btnArreglo.setBackground(new java.awt.Color(102, 102, 0));
+        btnArreglo.setFont(new java.awt.Font("Modern No. 20", 0, 12)); // NOI18N
         btnArreglo.setText("Crear arreglo");
         btnArreglo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -200,7 +214,7 @@ public class CountingSort extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(55, Short.MAX_VALUE)
+                .addContainerGap(70, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -238,13 +252,13 @@ public class CountingSort extends javax.swing.JFrame {
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(lblArregloInvertido)
                                     .addComponent(lblTiempo))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 225, Short.MAX_VALUE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 239, Short.MAX_VALUE)
                                 .addComponent(btnRegresar)))))
                 .addContainerGap())
-            .addGroup(layout.createSequentialGroup()
-                .addGap(209, 209, 209)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel1)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(187, 187, 187))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -289,6 +303,7 @@ public class CountingSort extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnArreglo2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnArreglo2ActionPerformed

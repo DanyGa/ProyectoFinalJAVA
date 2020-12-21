@@ -123,29 +123,38 @@ public class CocktailSort extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel5.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Century Schoolbook", 0, 12)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(153, 0, 153));
         jLabel5.setText("Arreglo orignal");
 
-        txtMaximo.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        txtMaximo.setFont(new java.awt.Font("Century Schoolbook", 0, 12)); // NOI18N
+        txtMaximo.setForeground(new java.awt.Color(153, 0, 153));
 
-        jLabel6.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Century Schoolbook", 0, 12)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(153, 0, 153));
         jLabel6.setText("Arreglo ordenado");
 
-        lblArregloOrdenado.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        lblArregloOrdenado.setFont(new java.awt.Font("Century Schoolbook", 0, 12)); // NOI18N
+        lblArregloOrdenado.setForeground(new java.awt.Color(153, 0, 153));
         lblArregloOrdenado.setText("Arreglo ordenado");
 
-        jLabel7.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("Century Schoolbook", 0, 12)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(153, 0, 153));
         jLabel7.setText("Comparaciones");
 
-        txtTamaño.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        txtTamaño.setFont(new java.awt.Font("Century Schoolbook", 0, 12)); // NOI18N
+        txtTamaño.setForeground(new java.awt.Color(153, 0, 153));
 
-        lblComparaciones.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        lblComparaciones.setFont(new java.awt.Font("Century Schoolbook", 0, 12)); // NOI18N
+        lblComparaciones.setForeground(new java.awt.Color(153, 0, 153));
         lblComparaciones.setText("Comparaciones");
 
-        jLabel1.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Century Schoolbook", 0, 12)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(153, 0, 153));
         jLabel1.setText("Tamaño");
 
-        btnArreglo.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        btnArreglo.setBackground(new java.awt.Color(153, 0, 153));
+        btnArreglo.setFont(new java.awt.Font("Modern No. 20", 0, 12)); // NOI18N
         btnArreglo.setText("Crear arreglo");
         btnArreglo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -153,19 +162,24 @@ public class CocktailSort extends javax.swing.JFrame {
             }
         });
 
-        jLabel4.setFont(new java.awt.Font("Century Gothic", 0, 18)); // NOI18N
-        jLabel4.setText("COCKTAIL SORT");
+        jLabel4.setFont(new java.awt.Font("Elephant", 0, 18)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(153, 0, 153));
+        jLabel4.setText("Cocktail Sort");
 
-        lblIntercambios.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        lblIntercambios.setFont(new java.awt.Font("Century Schoolbook", 0, 12)); // NOI18N
+        lblIntercambios.setForeground(new java.awt.Color(153, 0, 153));
         lblIntercambios.setText("Intercambios");
 
-        jLabel8.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        jLabel8.setFont(new java.awt.Font("Century Schoolbook", 0, 12)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(153, 0, 153));
         jLabel8.setText("Intercambios");
 
-        jLabel2.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Century Schoolbook", 0, 12)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(153, 0, 153));
         jLabel2.setText("Minimo");
 
-        btnArregloAleatorio.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        btnArregloAleatorio.setBackground(new java.awt.Color(153, 0, 153));
+        btnArregloAleatorio.setFont(new java.awt.Font("Modern No. 20", 0, 12)); // NOI18N
         btnArregloAleatorio.setText("Crear arreglo aleatorio");
         btnArregloAleatorio.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -173,26 +187,32 @@ public class CocktailSort extends javax.swing.JFrame {
             }
         });
 
-        lblTiempo.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        lblTiempo.setFont(new java.awt.Font("Century Schoolbook", 0, 12)); // NOI18N
+        lblTiempo.setForeground(new java.awt.Color(153, 0, 153));
         lblTiempo.setText("Tiempo");
 
-        jLabel10.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        jLabel10.setFont(new java.awt.Font("Century Schoolbook", 0, 12)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(153, 0, 153));
         jLabel10.setText("Tiempo");
 
-        jLabel3.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Century Schoolbook", 0, 12)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(153, 0, 153));
         jLabel3.setText("Maximo");
 
-        txtMinimo.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        txtMinimo.setFont(new java.awt.Font("Century Schoolbook", 0, 12)); // NOI18N
+        txtMinimo.setForeground(new java.awt.Color(153, 0, 153));
 
-        btnRegreso.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
-        btnRegreso.setText("VOLVER");
+        btnRegreso.setBackground(new java.awt.Color(153, 0, 153));
+        btnRegreso.setFont(new java.awt.Font("Modern No. 20", 0, 12)); // NOI18N
+        btnRegreso.setText("Atras");
         btnRegreso.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnRegresoActionPerformed(evt);
             }
         });
 
-        lblArregloOriginal.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        lblArregloOriginal.setFont(new java.awt.Font("Century Schoolbook", 0, 12)); // NOI18N
+        lblArregloOriginal.setForeground(new java.awt.Color(153, 0, 153));
         lblArregloOriginal.setText("Arreglo orignal");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -202,54 +222,53 @@ public class CocktailSort extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(14, 14, 14)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(layout.createSequentialGroup()
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(layout.createSequentialGroup()
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(jLabel1)
-                                        .addComponent(jLabel2)
-                                        .addComponent(jLabel3))
-                                    .addGap(24, 24, 24)
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(txtTamaño, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(txtMinimo, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(txtMaximo, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                .addComponent(btnArreglo))
-                            .addGap(54, 54, 54)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jLabel6)
-                                .addComponent(jLabel5, javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel7)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGap(12, 12, 12)
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                            .addComponent(jLabel10)
-                                            .addComponent(jLabel8)))))
-                            .addGap(37, 37, 37)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(lblArregloOriginal)
-                                .addComponent(lblArregloOrdenado)
-                                .addComponent(lblComparaciones)
-                                .addComponent(lblIntercambios)
-                                .addComponent(lblTiempo)))
-                        .addGroup(layout.createSequentialGroup()
-                            .addComponent(btnArregloAleatorio)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(btnRegreso)))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(264, 264, 264)
-                        .addComponent(jLabel4)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 6, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(305, 305, 305))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel1)
+                                    .addComponent(jLabel2)
+                                    .addComponent(jLabel3))
+                                .addGap(24, 24, 24)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(txtTamaño, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtMinimo, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtMaximo, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(btnArreglo))
+                        .addGap(54, 54, 54)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel6)
+                            .addComponent(jLabel5, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(jLabel7)
+                                .addGroup(layout.createSequentialGroup()
+                                    .addGap(12, 12, 12)
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                        .addComponent(jLabel10)
+                                        .addComponent(jLabel8)))))
+                        .addGap(37, 37, 37)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lblArregloOriginal)
+                            .addComponent(lblArregloOrdenado)
+                            .addComponent(lblComparaciones)
+                            .addComponent(lblIntercambios)
+                            .addComponent(lblTiempo)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(btnArregloAleatorio)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 280, Short.MAX_VALUE)
+                        .addComponent(btnRegreso)))
+                .addGap(41, 41, 41))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel4)
+                .addGap(162, 162, 162))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(26, 26, 26)
+                .addGap(20, 20, 20)
                 .addComponent(jLabel4)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -285,10 +304,11 @@ public class CocktailSort extends javax.swing.JFrame {
                                     .addComponent(lblTiempo))))
                         .addGap(21, 21, 21))
                     .addComponent(btnRegreso, javax.swing.GroupLayout.Alignment.TRAILING))
-                .addContainerGap(58, Short.MAX_VALUE))
+                .addContainerGap(65, Short.MAX_VALUE))
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnArregloActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnArregloActionPerformed

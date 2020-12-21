@@ -46,6 +46,8 @@ public class Arboles extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jButton6.setBackground(new java.awt.Color(204, 102, 255));
+        jButton6.setFont(new java.awt.Font("Modern No. 20", 1, 12)); // NOI18N
         jButton6.setText("Por Nivel");
         jButton6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -53,12 +55,16 @@ public class Arboles extends javax.swing.JFrame {
             }
         });
 
+        jButton7.setBackground(new java.awt.Color(204, 102, 255));
+        jButton7.setFont(new java.awt.Font("Modern No. 20", 1, 12)); // NOI18N
         jButton7.setText("Exite un dato");
         jButton7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton7ActionPerformed(evt);
             }
         });
+
+        jPanel2.setForeground(new java.awt.Color(204, 102, 255));
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -72,16 +78,22 @@ public class Arboles extends javax.swing.JFrame {
         );
 
         jTextArea1.setColumns(20);
+        jTextArea1.setFont(new java.awt.Font("Century Schoolbook", 0, 12)); // NOI18N
+        jTextArea1.setForeground(new java.awt.Color(204, 102, 255));
         jTextArea1.setRows(5);
         jScrollPane1.setViewportView(jTextArea1);
 
-        jButton2.setText("Tirar Arbol :P");
+        jButton2.setBackground(new java.awt.Color(204, 102, 255));
+        jButton2.setFont(new java.awt.Font("Modern No. 20", 1, 12)); // NOI18N
+        jButton2.setText("Borrar Todo");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
             }
         });
 
+        jButton3.setBackground(new java.awt.Color(204, 102, 255));
+        jButton3.setFont(new java.awt.Font("Modern No. 20", 1, 12)); // NOI18N
         jButton3.setText("Preorden");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -89,6 +101,8 @@ public class Arboles extends javax.swing.JFrame {
             }
         });
 
+        jButton4.setBackground(new java.awt.Color(204, 102, 255));
+        jButton4.setFont(new java.awt.Font("Modern No. 20", 1, 12)); // NOI18N
         jButton4.setText("Inorden");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -96,6 +110,8 @@ public class Arboles extends javax.swing.JFrame {
             }
         });
 
+        jButton5.setBackground(new java.awt.Color(204, 102, 255));
+        jButton5.setFont(new java.awt.Font("Modern No. 20", 1, 12)); // NOI18N
         jButton5.setText("Postorden");
         jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -103,6 +119,8 @@ public class Arboles extends javax.swing.JFrame {
             }
         });
 
+        jButton1.setBackground(new java.awt.Color(204, 102, 255));
+        jButton1.setFont(new java.awt.Font("Modern No. 20", 1, 12)); // NOI18N
         jButton1.setText("Insertar");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -110,6 +128,8 @@ public class Arboles extends javax.swing.JFrame {
             }
         });
 
+        txDato.setFont(new java.awt.Font("Century Schoolbook", 0, 12)); // NOI18N
+        txDato.setForeground(new java.awt.Color(204, 102, 255));
         txDato.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txDatoActionPerformed(evt);
@@ -178,6 +198,7 @@ public class Arboles extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed

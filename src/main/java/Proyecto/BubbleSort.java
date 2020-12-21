@@ -57,23 +57,43 @@ public class BubbleSort extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        btnRegreso.setText("VOLVER");
+        btnRegreso.setBackground(new java.awt.Color(255, 204, 0));
+        btnRegreso.setFont(new java.awt.Font("Modern No. 20", 1, 12)); // NOI18N
+        btnRegreso.setText("Atras");
         btnRegreso.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnRegresoActionPerformed(evt);
             }
         });
 
+        lblArregloOriginal.setFont(new java.awt.Font("Century Schoolbook", 1, 12)); // NOI18N
+        lblArregloOriginal.setForeground(new java.awt.Color(255, 204, 0));
         lblArregloOriginal.setText("Arreglo orignal");
 
+        jLabel5.setFont(new java.awt.Font("Century Schoolbook", 1, 12)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 204, 0));
         jLabel5.setText("Arreglo orignal");
 
+        txtMaximo.setFont(new java.awt.Font("Century Schoolbook", 0, 12)); // NOI18N
+        txtMaximo.setForeground(new java.awt.Color(255, 204, 0));
+
+        jLabel6.setFont(new java.awt.Font("Century Schoolbook", 1, 12)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(255, 204, 0));
         jLabel6.setText("Arreglo ordenado");
 
+        lblArregloOrdenado.setFont(new java.awt.Font("Century Schoolbook", 1, 12)); // NOI18N
+        lblArregloOrdenado.setForeground(new java.awt.Color(255, 204, 0));
         lblArregloOrdenado.setText("Arreglo ordenado");
 
+        jLabel7.setFont(new java.awt.Font("Century Schoolbook", 1, 12)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(255, 204, 0));
         jLabel7.setText("Comparaciones");
 
+        txtTamaño.setFont(new java.awt.Font("Century Schoolbook", 0, 12)); // NOI18N
+        txtTamaño.setForeground(new java.awt.Color(255, 204, 0));
+
+        btnArreglo.setBackground(new java.awt.Color(255, 204, 0));
+        btnArreglo.setFont(new java.awt.Font("Modern No. 20", 1, 12)); // NOI18N
         btnArreglo.setText("Crear arreglo");
         btnArreglo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -81,12 +101,20 @@ public class BubbleSort extends javax.swing.JFrame {
             }
         });
 
+        lblComparaciones.setFont(new java.awt.Font("Century Schoolbook", 1, 12)); // NOI18N
+        lblComparaciones.setForeground(new java.awt.Color(255, 204, 0));
         lblComparaciones.setText("Comparaciones");
 
+        jLabel8.setFont(new java.awt.Font("Century Schoolbook", 1, 12)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(255, 204, 0));
         jLabel8.setText("Intercambios");
 
+        jLabel1.setFont(new java.awt.Font("Century Schoolbook", 1, 12)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 204, 0));
         jLabel1.setText("Tamaño");
 
+        btnArregloAleatorio.setBackground(new java.awt.Color(255, 204, 0));
+        btnArregloAleatorio.setFont(new java.awt.Font("Modern No. 20", 1, 12)); // NOI18N
         btnArregloAleatorio.setText("Crear arreglo aleatorio");
         btnArregloAleatorio.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -94,43 +122,57 @@ public class BubbleSort extends javax.swing.JFrame {
             }
         });
 
+        lblIntercambios.setFont(new java.awt.Font("Century Schoolbook", 1, 12)); // NOI18N
+        lblIntercambios.setForeground(new java.awt.Color(255, 204, 0));
         lblIntercambios.setText("Intercambios");
 
-        jLabel4.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
-        jLabel4.setText("BURBUJA");
+        jLabel4.setFont(new java.awt.Font("Elephant", 1, 18)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 204, 0));
+        jLabel4.setText("Bubble Sort");
 
+        jLabel2.setFont(new java.awt.Font("Century Schoolbook", 1, 12)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 204, 0));
         jLabel2.setText("Minimo");
 
+        lblTiempo.setFont(new java.awt.Font("Century Schoolbook", 1, 12)); // NOI18N
+        lblTiempo.setForeground(new java.awt.Color(255, 204, 0));
         lblTiempo.setText("Tiempo");
 
+        jLabel10.setFont(new java.awt.Font("Century Schoolbook", 1, 12)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(255, 204, 0));
         jLabel10.setText("Tiempo");
 
+        jLabel3.setFont(new java.awt.Font("Century Schoolbook", 1, 12)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 204, 0));
         jLabel3.setText("Maximo");
+
+        txtMinimo.setFont(new java.awt.Font("Century Schoolbook", 0, 12)); // NOI18N
+        txtMinimo.setForeground(new java.awt.Color(255, 204, 0));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(61, 61, 61)
+                .addGap(22, 22, 22)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(layout.createSequentialGroup()
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel1)
+                                    .addComponent(jLabel2)
+                                    .addComponent(jLabel3))
+                                .addGap(24, 24, 24)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(txtTamaño, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtMinimo, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtMaximo, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(btnArreglo))
+                        .addGap(54, 54, 54)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel6)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(layout.createSequentialGroup()
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(jLabel1)
-                                        .addComponent(jLabel2)
-                                        .addComponent(jLabel3))
-                                    .addGap(24, 24, 24)
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(txtTamaño, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(txtMinimo, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(txtMaximo, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                .addComponent(btnArreglo))
-                            .addGap(54, 54, 54)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jLabel6)
                                 .addComponent(jLabel5, javax.swing.GroupLayout.Alignment.TRAILING)
                                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel7)
@@ -138,23 +180,29 @@ public class BubbleSort extends javax.swing.JFrame {
                                         .addGap(12, 12, 12)
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                             .addComponent(jLabel10)
-                                            .addComponent(jLabel8))))
-                                .addComponent(jLabel4))
-                            .addGap(37, 37, 37)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(lblArregloOriginal)
-                                .addComponent(lblArregloOrdenado)
-                                .addComponent(lblComparaciones)
-                                .addComponent(lblIntercambios)
-                                .addComponent(lblTiempo)))
-                        .addComponent(btnArregloAleatorio))
-                    .addComponent(btnRegreso, javax.swing.GroupLayout.Alignment.TRAILING))
-                .addContainerGap(65, Short.MAX_VALUE))
+                                            .addComponent(jLabel8))))))
+                        .addGap(38, 38, 38)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lblArregloOriginal)
+                            .addComponent(lblArregloOrdenado)
+                            .addComponent(lblComparaciones)
+                            .addComponent(lblIntercambios)
+                            .addComponent(lblTiempo))
+                        .addContainerGap(66, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(btnArregloAleatorio)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btnRegreso)
+                        .addGap(16, 16, 16))))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel4)
+                .addGap(138, 138, 138))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(66, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(19, 19, 19)
                 .addComponent(jLabel4)
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -179,7 +227,9 @@ public class BubbleSort extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(btnArreglo)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnArregloAleatorio))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(btnArregloAleatorio)
+                            .addComponent(btnRegreso)))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel8)
@@ -188,12 +238,11 @@ public class BubbleSort extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel10)
                             .addComponent(lblTiempo))))
-                .addGap(9, 9, 9)
-                .addComponent(btnRegreso)
-                .addGap(51, 51, 51))
+                .addContainerGap(37, Short.MAX_VALUE))
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnRegresoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegresoActionPerformed

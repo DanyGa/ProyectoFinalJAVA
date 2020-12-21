@@ -50,9 +50,12 @@ public class Colas extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel3.setText("COLA");
+        jLabel3.setFont(new java.awt.Font("Elephant", 1, 18)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(102, 154, 206));
+        jLabel3.setText("Cola");
 
-        btnEliminarCola.setFont(new java.awt.Font("Century Gothic", 0, 10)); // NOI18N
+        btnEliminarCola.setBackground(new java.awt.Color(102, 154, 206));
+        btnEliminarCola.setFont(new java.awt.Font("Modern No. 20", 0, 12)); // NOI18N
         btnEliminarCola.setText("Eliminar cola");
         btnEliminarCola.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -63,20 +66,24 @@ public class Colas extends javax.swing.JFrame {
         lblCola.setFont(new java.awt.Font("Century Gothic", 0, 10)); // NOI18N
         lblCola.setText("-");
 
-        jLabel1.setFont(new java.awt.Font("Century Gothic", 0, 10)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Century Schoolbook", 0, 12)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(102, 154, 206));
         jLabel1.setText("Dato");
 
-        btnRegresar.setFont(new java.awt.Font("Century Gothic", 0, 10)); // NOI18N
-        btnRegresar.setText("VOLVER");
+        btnRegresar.setBackground(new java.awt.Color(102, 154, 206));
+        btnRegresar.setFont(new java.awt.Font("Modern No. 20", 0, 12)); // NOI18N
+        btnRegresar.setText("Atras");
         btnRegresar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnRegresarActionPerformed(evt);
             }
         });
 
-        txtDato.setFont(new java.awt.Font("Century Gothic", 0, 10)); // NOI18N
+        txtDato.setFont(new java.awt.Font("Century Schoolbook", 0, 12)); // NOI18N
+        txtDato.setForeground(new java.awt.Color(102, 154, 206));
 
-        btnEncolar.setFont(new java.awt.Font("Century Gothic", 0, 10)); // NOI18N
+        btnEncolar.setBackground(new java.awt.Color(102, 154, 206));
+        btnEncolar.setFont(new java.awt.Font("Modern No. 20", 0, 12)); // NOI18N
         btnEncolar.setText("Encolar");
         btnEncolar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -84,7 +91,8 @@ public class Colas extends javax.swing.JFrame {
             }
         });
 
-        btnDesencolar.setFont(new java.awt.Font("Century Gothic", 0, 10)); // NOI18N
+        btnDesencolar.setBackground(new java.awt.Color(102, 154, 206));
+        btnDesencolar.setFont(new java.awt.Font("Modern No. 20", 0, 12)); // NOI18N
         btnDesencolar.setText("Desencolar");
         btnDesencolar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -92,7 +100,8 @@ public class Colas extends javax.swing.JFrame {
             }
         });
 
-        btnFrente.setFont(new java.awt.Font("Century Gothic", 0, 10)); // NOI18N
+        btnFrente.setBackground(new java.awt.Color(102, 154, 206));
+        btnFrente.setFont(new java.awt.Font("Modern No. 20", 0, 12)); // NOI18N
         btnFrente.setText("Frente");
         btnFrente.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -100,7 +109,8 @@ public class Colas extends javax.swing.JFrame {
             }
         });
 
-        btnGuardar.setFont(new java.awt.Font("Century Gothic", 0, 10)); // NOI18N
+        btnGuardar.setBackground(new java.awt.Color(102, 154, 206));
+        btnGuardar.setFont(new java.awt.Font("Modern No. 20", 0, 12)); // NOI18N
         btnGuardar.setText("Guardar");
         btnGuardar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -108,12 +118,15 @@ public class Colas extends javax.swing.JFrame {
             }
         });
 
-        jLabel2.setFont(new java.awt.Font("Century Gothic", 0, 10)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Century Schoolbook", 0, 12)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(102, 154, 206));
         jLabel2.setText("Nombre del archivo");
 
-        txtArchivo.setFont(new java.awt.Font("Century Gothic", 0, 10)); // NOI18N
+        txtArchivo.setFont(new java.awt.Font("Century Schoolbook", 0, 12)); // NOI18N
+        txtArchivo.setForeground(new java.awt.Color(102, 154, 206));
 
-        btnCargar.setFont(new java.awt.Font("Century Gothic", 0, 10)); // NOI18N
+        btnCargar.setBackground(new java.awt.Color(102, 154, 206));
+        btnCargar.setFont(new java.awt.Font("Modern No. 20", 0, 12)); // NOI18N
         btnCargar.setText("Cargar");
         btnCargar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -159,9 +172,9 @@ public class Colas extends javax.swing.JFrame {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(91, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel3)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1)
                     .addComponent(txtDato, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -185,6 +198,7 @@ public class Colas extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnEliminarColaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEliminarColaActionPerformed
