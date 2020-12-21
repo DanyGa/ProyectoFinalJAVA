@@ -4,13 +4,19 @@
  * and open the template in the editor.
  */
 package Proyecto;
-
+import java.util.concurrent.ThreadLocalRandom;
+import javax.swing.JOptionPane;
 /**
  *
  * @author DanyG
  */
 public class CountingSort extends javax.swing.JFrame {
-
+    int intercambios;
+    int comparaciones;
+    int[] arregloOriginal;
+    int[] arregloAuxiliar;
+    int[] arregloOrdenado;
+    int valorMayor;
     /**
      * Creates new form CountingSort
      */
@@ -18,6 +24,81 @@ public class CountingSort extends javax.swing.JFrame {
         initComponents();
     }
 
+    private String ImprimirArreglo(int[] arreglo){
+        String numeros = "";
+        if(arreglo.length != 0){
+            for (int i = 0; i< arreglo.length;i++){
+                numeros += arreglo[i] + ", ";
+            }
+        }
+        return numeros;
+    }
+     
+     public void OrdenarArreglo(int tamaño,int minimo, int maximo){
+         arregloOriginal = new int[tamaño];
+        long start = System.nanoTime();
+            int random;
+            for (int i = 0; i < arregloOriginal.length; i++)
+            {
+               random  = ThreadLocalRandom.current().nextInt(minimo,maximo + 1);
+               arregloOriginal[i] = random;
+            }
+            lblArregloDesordenado.setText(ImprimirArreglo(arregloOriginal));
+            
+            for (int i = 0; i < arregloOriginal.length; i++)
+            {
+                if (arregloOriginal[i] > valorMayor)
+                {
+                    valorMayor = arregloOriginal[i];
+                }
+            }
+
+            arregloAuxiliar = new int[valorMayor + 1];
+            int posicion;
+            for (int i = 0; i < arregloOriginal.length; i++)
+            {
+                posicion = arregloOriginal[i];
+                arregloAuxiliar[posicion]++;
+            }
+
+            for (int i = 1; i < arregloAuxiliar.length; i++)
+            {
+                arregloAuxiliar[i] = arregloAuxiliar[i - 1] + arregloAuxiliar[i];
+            }   
+
+            for (int i = arregloAuxiliar.length - 1; i != 0; i--)
+            {
+                arregloAuxiliar[i] = arregloAuxiliar[i - 1];
+            }
+            arregloAuxiliar[0] = 0;
+
+            arregloOrdenado = new int[arregloOriginal.length];
+            int valor;  
+            for (int i = 0; i < arregloOriginal.length; i++)
+            {
+                valor = arregloOriginal[i];
+                posicion = arregloAuxiliar[valor];
+                arregloOrdenado[posicion] = valor;
+                arregloAuxiliar[valor]++;
+            }
+            long aaa;
+            aaa = System.nanoTime();
+            double tiempo = (aaa - start)/1000000.0;
+            lblTiempo.setText(tiempo + "");
+            lblArregloOrdenado.setText(ImprimirArreglo(arregloOrdenado));
+            RevertirArreglo();
+            lblArregloInvertido.setText(ImprimirArreglo(arregloOrdenado)); 
+                      
+     }
+     
+     public void RevertirArreglo(){
+    for(int i=0; i<arregloOrdenado.length/2; i++){
+  int temp = arregloOrdenado[i];
+  arregloOrdenado[i] = arregloOrdenado[arregloOrdenado.length -i -1];
+  arregloOrdenado[arregloOrdenado.length -i -1] = temp;
+}
+    }
+     
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -27,21 +108,231 @@ public class CountingSort extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        btnArreglo2 = new javax.swing.JButton();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        lblArregloOrdenado = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        txtMaximo = new javax.swing.JTextField();
+        jLabel2 = new javax.swing.JLabel();
+        lblArregloInvertido = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        txtTamaño = new javax.swing.JTextField();
+        lblTiempo = new javax.swing.JLabel();
+        lblArregloDesordenado = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        txtMinimo = new javax.swing.JTextField();
+        btnRegresar = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+        btnArreglo = new javax.swing.JButton();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        btnArreglo2.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        btnArreglo2.setText("Crear arreglo aleatorio");
+        btnArreglo2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnArreglo2ActionPerformed(evt);
+            }
+        });
+
+        jLabel6.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        jLabel6.setText("Arreglo desordenado");
+
+        jLabel8.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        jLabel8.setText("Arreglo ordenado");
+
+        lblArregloOrdenado.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        lblArregloOrdenado.setText("-");
+
+        jLabel10.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        jLabel10.setText("Arreglo invertido");
+
+        txtMaximo.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+
+        jLabel2.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        jLabel2.setText("Tamaño del arreglo");
+
+        lblArregloInvertido.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        lblArregloInvertido.setText("-");
+
+        jLabel11.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        jLabel11.setText("Tiempo elapsado");
+
+        jLabel3.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        jLabel3.setText("Min");
+
+        txtTamaño.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+
+        lblTiempo.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        lblTiempo.setText("-");
+
+        lblArregloDesordenado.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        lblArregloDesordenado.setText("-");
+
+        jLabel4.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        jLabel4.setText("Max");
+
+        txtMinimo.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+
+        btnRegresar.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        btnRegresar.setText("VOLVER");
+        btnRegresar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRegresarActionPerformed(evt);
+            }
+        });
+
+        jLabel1.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
+        jLabel1.setText("COUNT");
+
+        btnArreglo.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        btnArreglo.setText("Crear arreglo");
+        btnArreglo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnArregloActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(55, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jLabel2)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(txtTamaño, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(btnArreglo2))
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(txtMinimo, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(12, 12, 12)
+                                .addComponent(jLabel3)))
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(12, 12, 12)
+                                .addComponent(jLabel4))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(txtMaximo, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(btnArreglo))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel6)
+                            .addComponent(jLabel8)
+                            .addComponent(jLabel10)
+                            .addComponent(jLabel11))
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lblArregloDesordenado)
+                            .addComponent(lblArregloOrdenado)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(lblArregloInvertido)
+                                    .addComponent(lblTiempo))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 225, Short.MAX_VALUE)
+                                .addComponent(btnRegresar)))))
+                .addContainerGap())
+            .addGroup(layout.createSequentialGroup()
+                .addGap(209, 209, 209)
+                .addComponent(jLabel1)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(10, 10, 10)
+                .addComponent(jLabel1)
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel2)
+                        .addComponent(txtTamaño, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txtMinimo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txtMaximo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(btnArreglo))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel3)
+                        .addComponent(jLabel4))
+                    .addComponent(btnArreglo2))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel6)
+                    .addComponent(lblArregloDesordenado))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel8)
+                    .addComponent(lblArregloOrdenado))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel10)
+                    .addComponent(lblArregloInvertido))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel11)
+                    .addComponent(lblTiempo))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(btnRegresar)
+                .addContainerGap())
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnArreglo2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnArreglo2ActionPerformed
+        int tamaño = ThreadLocalRandom.current().nextInt(1,18 + 1);
+        int minimo = ThreadLocalRandom.current().nextInt(0,50 + 1);
+        int maximo = ThreadLocalRandom.current().nextInt(minimo, 100 + 1);
+        comparaciones = 0;
+        intercambios = 0;
+        OrdenarArreglo(tamaño,minimo,maximo);
+    }//GEN-LAST:event_btnArreglo2ActionPerformed
+
+    private void btnRegresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegresarActionPerformed
+        dispose();
+    }//GEN-LAST:event_btnRegresarActionPerformed
+
+    private void btnArregloActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnArregloActionPerformed
+        try
+        {
+            int tamaño = Integer.parseInt(txtTamaño.getText());
+            int minimo = Integer.parseInt(txtMinimo.getText());
+            int maximo = Integer.parseInt(txtTamaño.getText());
+            if (tamaño <= 0)
+            {
+                JOptionPane.showMessageDialog(null,"El tamaño no puede ser menor o igual a 0");
+                return;
+            }
+            if(maximo <= minimo)
+            {
+                JOptionPane.showMessageDialog(null, "El maximo no puede ser menor o igual que el minimo");
+                return;
+            }
+            txtMaximo.setText("");
+            txtMinimo.setText("");
+            txtTamaño.setText("");
+            intercambios = 0;
+            comparaciones = 0;
+            OrdenarArreglo(tamaño,minimo,maximo);
+
+        }
+        catch(Exception e)
+        {
+            JOptionPane.showMessageDialog(null,"Introduzca datos validos");
+        }
+    }//GEN-LAST:event_btnArregloActionPerformed
 
     /**
      * @param args the command line arguments
@@ -79,5 +370,23 @@ public class CountingSort extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnArreglo;
+    private javax.swing.JButton btnArreglo2;
+    private javax.swing.JButton btnRegresar;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel lblArregloDesordenado;
+    private javax.swing.JLabel lblArregloInvertido;
+    private javax.swing.JLabel lblArregloOrdenado;
+    private javax.swing.JLabel lblTiempo;
+    private javax.swing.JTextField txtMaximo;
+    private javax.swing.JTextField txtMinimo;
+    private javax.swing.JTextField txtTamaño;
     // End of variables declaration//GEN-END:variables
 }

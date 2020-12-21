@@ -10,14 +10,14 @@ package Proyecto;
  * @author DanyG
  */
 public class Pila {
-    private NodoPila top;
-    public NodoPila getTop(){return top;}
-    public void setTop(NodoPila n){top = n;}
+    private Nodo top;
+    public Nodo getTop(){return top;}
+    public void setTop(Nodo n){top = n;}
     
     
     public int getCount(){
     int c = 0;
-    NodoPila t = top;
+    Nodo t = top;
     while(t != null){
         c++;
         t = t.getNext();
@@ -28,12 +28,12 @@ public class Pila {
         top = null;
     }
     
-    public void Push(NodoPila n){
+    public void Push(Nodo n){
         n.setNext(top);
         top = n;
     }
-    public NodoPila Pop(){
-        NodoPila regreso = top;
+    public Nodo Pop(){
+        Nodo regreso = top;
         if (top != null){
             top = top.getNext();
         }
@@ -42,7 +42,7 @@ public class Pila {
     
     public String ToString(){
         String stringpila = "";
-        NodoPila t = top;
+        Nodo t = top;
         if(t != null){
         stringpila += t.ToString();
         t = t.getNext();
